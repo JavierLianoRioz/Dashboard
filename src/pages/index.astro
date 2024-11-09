@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Button from '../components/LinkButton.astro'
+import LinkList from '../components/linklist/LinkList.astro'
+import Link from '../components/linklist/LinkButton.astro'
 ---
 
 <Layout title="Tower">
@@ -10,29 +11,20 @@ import Button from '../components/LinkButton.astro'
 			<br>The Tower.
 		</header>
 		<main class="grid place-content-center w-full">
-			<ul class="[&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2 flex flex-row gap-2 w-fit">
-				<li>
-					<Button link="https://youtube.com/@midas-main" Class="text-red-400">
+			<LinkList>
+					<Link link="https://youtube.com/@midas-main" Class="text-red-400">
 						Youtube
-					</Button>
-				</li>
-				<li>
-					<Button link="https://tiktok.com/@sy.midas">
+					</Link>
+					<Link link="https://tiktok.com/@sy.midas">
 						Tiktok
-					</Button>
-				</li>
-				<li>
-					<Button link="https://instagram.com/javierlia55" Class="text-pink-400">
+					</Link>
+					<Link link="https://instagram.com/javierlia55" Class="text-pink-400">
 						Instagram
-					</Button>
-				</li>
-				<li>
-					<Button link="https://www.linkedin.com/in/javier-lia%C3%B1o-rioz-271a17337/" Class="text-teal-500">
+					</Link>
+					<Link link="https://www.linkedin.com/in/javier-lia%C3%B1o-rioz-271a17337/" Class="text-teal-500">
 						LinkedIn
-					</Button>
-
-				</li>
-			</ul>
+					</Link>
+			</LinkList>
 		</main>
 
 </Layout> 
