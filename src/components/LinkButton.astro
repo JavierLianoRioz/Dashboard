@@ -1,0 +1,10 @@
+---
+interface Props {
+link: string;
+Class?: string;
+}
+const {link, Class} = Astro.props;
+---
+<a href={link} class:list={["grid place-content-center hover:-translate-y-2 hover:text-black hover:bg-white p-2 m-2 rounded-lg font-bold transition-all duration-300", Class]}>
+	<slot/>
+</a>
